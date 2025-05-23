@@ -29,6 +29,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class BaseClass {
 
@@ -135,6 +136,12 @@ public class BaseClass {
 
 		js.executeScript("arguments[0].value='" + value + "';", element);
 
+	}
+	public static void selectDropDown(WebElement element,String value) {
+
+		Select s=new Select(element);
+		
+		s.selectByVisibleText(value);
 	}
 
 	public static String ExcelRead(int row, int cell) throws IOException {

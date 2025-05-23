@@ -15,7 +15,7 @@ public class StepDefinition2 extends BaseClass {
 	public void userClickTheCreateNewAccountButton() throws InterruptedException {
 
 		driver.findElement(By.xpath("//a[text()='Create new account']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	@When("user navigate into new window and fill the firstname and surname")
@@ -29,12 +29,13 @@ public class StepDefinition2 extends BaseClass {
 	@When("user select the date of birth")
 	public void userSelectTheDateOfBirth() {
 
-		WebElement day = driver.findElement(By.xpath("//option[text()='5']"));
-		js.executeScript("arguments[0].setAttribute('value','5')", day);
-		WebElement month = driver.findElement(By.xpath("//option[text()='Aug']"));
-		js.executeScript("arguments[0].setAttribute('value','Aug')", month);
-		WebElement year = driver.findElement(By.xpath("//option[text()='2020']"));
-		js.executeScript("arguments[0].setAttribute('value','2020')", year);
+		WebElement day = driver.findElement(By.id("day"));
+		selectDropDown(day, "4");
+		WebElement month = driver.findElement(By.id("month"));
+		selectDropDown(month, "Oct");
+		WebElement year = driver.findElement(By.id("year"));
+		selectDropDown(year, "2020");
+		
 	}
 
 	@When("user select any one gender option")

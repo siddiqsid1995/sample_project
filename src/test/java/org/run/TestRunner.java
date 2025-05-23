@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\resources", glue = "org.step", 
-snippets = SnippetType.CAMELCASE, dryRun = false,
+snippets = SnippetType.CAMELCASE, dryRun = false,tags = {"@createaccount or @login"},
 plugin = {"html:target",
          "json:target\\reports\\fb.json",
          "junit:target\\reports\\myfbreport.xml",

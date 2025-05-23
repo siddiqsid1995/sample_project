@@ -53,8 +53,7 @@ formatter.match({
   "location": "StepDefinition2.userSelectTheDateOfBirth()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])\" because \"org.step.StepDefinition2.js\" is null\r\n\tat org.step.StepDefinition2.userSelectTheDateOfBirth(StepDefinition2.java:33)\r\n\tat ✽.user select the date of birth(file:src/test/resources/FeatureFiles/createnewaccount.feature:9)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user select any one gender option",
@@ -64,7 +63,7 @@ formatter.match({
   "location": "StepDefinition2.userSelectAnyOneGenderOption()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user enter the mobile number",
@@ -74,7 +73,7 @@ formatter.match({
   "location": "StepDefinition2.userEnterTheMobileNumber()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user set the password of the account",
@@ -84,7 +83,7 @@ formatter.match({
   "location": "StepDefinition2.userSetThePasswordOfTheAccount()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user account was created",
@@ -94,7 +93,7 @@ formatter.match({
   "location": "StepDefinition2.userAccountWasCreated()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
