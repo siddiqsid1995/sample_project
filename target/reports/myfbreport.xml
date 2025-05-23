@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="12.443522">
-    <testcase classname="To Validate the login functionality of fb application" name="To Validate the login with create new account button with respective fields" time="7.530688">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="11.293719">
+    <testcase classname="To Validate the login functionality of fb application" name="To Validate the login with create new account button with respective fields" time="6.901845">
         <system-out><![CDATA[When user click the create new account button...............................passed
 And user navigate into new window and fill the firstname and surname........passed
 And user select the date of birth...........................................passed
@@ -10,13 +10,13 @@ And user set the password of the account....................................pass
 Then user account was created...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To Validate the login functionality of facebook application" name="To Validate the login with valid username and valid password" time="2.564825">
+    <testcase classname="To Validate the login functionality of facebook application" name="To Validate the login with valid username and valid password" time="2.070391">
         <system-out><![CDATA[When user want to enter the values in username and password field...........passed
 And user click the login button.............................................passed
 Then user navigate into home page...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To Validate the login functionality of facebook application" name="To Validate the login with invalid username and invalid password" time="2.348009">
+    <testcase classname="To Validate the login functionality of facebook application" name="To Validate the login with invalid username and invalid password" time="2.321483">
         <system-out><![CDATA[When user enter the values in username and password field and click the login button.passed
 Then user navigate into Error page..........................................passed
 ]]></system-out>
