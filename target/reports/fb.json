@@ -1,0 +1,342 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2025-05-21T07:24:35.785Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3071775400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "To Validate the login with create new account button with respective fields",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-fb-application;to-validate-the-login-with-create-new-account-button-with-respective-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 394808800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3335376300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click the create new account button",
+            "match": {
+              "location": "StepDefinition2.userClickTheCreateNewAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 271130300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigate into new window and fill the firstname and surname",
+            "match": {
+              "location": "StepDefinition2.userNavigateIntoNewWindowAndFillTheFirstnameAndSurname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])\" because \"org.step.StepDefinition2.js\" is null\r\n\tat org.step.StepDefinition2.userSelectTheDateOfBirth(StepDefinition2.java:33)\r\n\tat ✽.user select the date of birth(file:src/test/resources/FeatureFiles/createnewaccount.feature:9)\r\n",
+              "duration": 17472800,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user select the date of birth",
+            "match": {
+              "location": "StepDefinition2.userSelectTheDateOfBirth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 455800,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user select any one gender option",
+            "match": {
+              "location": "StepDefinition2.userSelectAnyOneGenderOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1540300,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user enter the mobile number",
+            "match": {
+              "location": "StepDefinition2.userEnterTheMobileNumber()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 521300,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user set the password of the account",
+            "match": {
+              "location": "StepDefinition2.userSetThePasswordOfTheAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 447300,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user account was created",
+            "match": {
+              "location": "StepDefinition2.userAccountWasCreated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@createaccount"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "To Validate the login functionality of fb application",
+    "description": "",
+    "id": "to-validate-the-login-functionality-of-fb-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/createnewaccount.feature",
+    "tags": [
+      {
+        "name": "@createaccount",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2025-05-21T07:24:42.933Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2316366000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "To Validate the login with valid username and valid password",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-facebook-application;to-validate-the-login-with-valid-username-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 390117200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 578830800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user want to enter the values in username and password field",
+            "match": {
+              "location": "StepDefinition1.userWantToEnterTheValuesInUsernameAndPasswordField(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "java123@gmail.com",
+                  "896750873"
+                ]
+              },
+              {
+                "cells": [
+                  "sql123@gmail.com",
+                  "896750873"
+                ]
+              },
+              {
+                "cells": [
+                  "oracle123@gmail.com",
+                  "896750873"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 217207800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click the login button",
+            "match": {
+              "location": "StepDefinition1.userClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3194000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigate into home page",
+            "match": {
+              "location": "StepDefinition1.userNavigateIntoHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-05-21T07:24:46.453Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2389608000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "To Validate the login with invalid username and invalid password",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-facebook-application;to-validate-the-login-with-invalid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 285949300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 848964900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter the values in username and password field and click the login button",
+            "match": {
+              "location": "StepDefinition1.userEnterTheValuesInUsernameAndPasswordFieldAndClickTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1937200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user navigate into Error page",
+            "match": {
+              "location": "StepDefinition1.userNavigateIntoErrorPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To Validate the login functionality of facebook application",
+    "description": "",
+    "id": "to-validate-the-login-functionality-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

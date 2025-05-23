@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="14.194664">
+    <testcase classname="To Validate the login functionality of fb application" name="To Validate the login with create new account button with respective fields" time="7.142632">
+        <failure message="java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])&quot; because &quot;org.step.StepDefinition2.js&quot; is null&#13;&#10;&#9;at org.step.StepDefinition2.userSelectTheDateOfBirth(StepDefinition2.java:33)&#13;&#10;&#9;at ✽.user select the date of birth(file:src/test/resources/FeatureFiles/createnewaccount.feature:9)&#13;&#10;"><![CDATA[When user click the create new account button...............................passed
+And user navigate into new window and fill the firstname and surname........passed
+And user select the date of birth...........................................failed
+And user select any one gender option.......................................skipped
+And user enter the mobile number............................................skipped
+And user set the password of the account....................................skipped
+Then user account was created...............................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "org.step.StepDefinition2.js" is null
+	at org.step.StepDefinition2.userSelectTheDateOfBirth(StepDefinition2.java:33)
+	at ✽.user select the date of birth(file:src/test/resources/FeatureFiles/createnewaccount.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="To Validate the login functionality of facebook application" name="To Validate the login with valid username and valid password" time="3.519411">
+        <system-out><![CDATA[When user want to enter the values in username and password field...........passed
+And user click the login button.............................................passed
+Then user navigate into home page...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Validate the login functionality of facebook application" name="To Validate the login with invalid username and invalid password" time="3.532621">
+        <system-out><![CDATA[When user enter the values in username and password field and click the login button.passed
+Then user navigate into Error page..........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
