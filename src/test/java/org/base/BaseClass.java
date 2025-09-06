@@ -31,6 +31,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 
 	public static WebDriver driver;
@@ -43,7 +45,9 @@ public class BaseClass {
 
 	public static void launchBrowser() {
 
-		driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+
+		driver=new ChromDriver();
 
 	}
 
